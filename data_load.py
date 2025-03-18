@@ -84,7 +84,7 @@ def convert_data():
                 continue
 
             image = image.resize((50, 50), Image.LANCZOS)
-            image_array = np.array(image).reshape(-1)
+            image_array = np.array(image).reshape(50, 50, 1)
             
             # Find the corresponding emotion by matching the filename
             # Look for exact matches to the filename
